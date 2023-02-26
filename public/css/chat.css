@@ -1,0 +1,105 @@
+/* CSS for the chat page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #05bf02;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .full-screen {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  #username-form, #chat {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid rgb(177, 255, 125);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.452);
+  }
+  
+  #username-form label, #message-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  #username-form input[type="text"], #message-form input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(193, 250, 119);
+    background: black;
+    color:#05bf02;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #username-form button, #message-form button {
+    background-color:#05bf02;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #username-form button:hover, #message-form button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #chat {
+    display: none;
+  }
+  
+  #chat h2 {
+    text-align: center;
+  }
+  
+  #messages {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+  }
+  
+  #messages div {
+    margin-bottom: 5px;
+  }
+  
+  #message-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #send-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #send-button:hover {
+    background-color: #3e8e41;
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Chat App - Chat</title>
+  <link rel="stylesheet" href="./css/chat.css">
+
+</head>
+
+<body>
+  
+
+  <!-- Form for entering username -->
+  <div class="fullscreen" id="particles-js">
+    <div id="username-form">
+      <label for="username">Enter your username:</label>
+      <input type="text" id="username" />
+      <button id="go-button">Go</button>
+    </div>
+  </div>
+
+  <!-- Main chat area -->
+  <div id="chat">
+    <h1>Chat App</h1>
+    <h2>Welcome, <span id="username-display"></span>!</h2>
+
+    <div id="messages"></div>
+
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="Type a message..." />
+      <button id="send-button">Send</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/particles.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
